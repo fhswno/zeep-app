@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, SafeAreaView, View } from 'react-native';
+import { ScrollView, SafeAreaView, View, Text } from 'react-native';
 import styled from 'styled-components';
 import Card from './Components/Card';
 import { NotificationIcon } from './Components/Icons';
@@ -45,7 +45,7 @@ const Subtitle = styled.Text`
   font-weight: 600;
   font-size: 15px;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 25px;
   text-transform: uppercase;
 `;
 
