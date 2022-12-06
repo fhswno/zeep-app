@@ -119,7 +119,7 @@ class HomeScreen extends React.Component {
                   onPress={this.props.openMenu} 
                   style={{ position: 'absolute' }}
                 >
-                  <Avatar source={require("../assets/avatar.jpg")} />
+                  <Avatar source={require("../assets/avatar2.png")} />
                 </TouchableOpacity>
                 <Title>Welcome back,</Title>
                 <Name>Salman</Name>
@@ -146,29 +146,29 @@ class HomeScreen extends React.Component {
                 horizontal={true}
                 showsHorizontalScrollIndicator={false}
               >
-                {cards.map((card, index) => (
+                {promoted.map((item, index) => (
                   <Card
                     key={index}
-                    title={card.title}
-                    image={card.image}
-                    subtitle={card.subtitle}
-                    caption={card.caption}
-                    logo={card.logo}
+                    title={item.title}
+                    image={item.image}
+                    subtitle={item.subtitle}
+                    caption={item.caption}
+                    logo={item.logo}
                   />
                 ))}
               </ScrollView>
               <Subtitle>Popular Podcasts</Subtitle>
               <View style={{ alignItems: "center", paddingTop: 10 }}>
-                {courses.map((course, index) => (
+                {podcasts.map((podcast, index) => (
                   <Course
                     key={index}
-                    title={course.title}
-                    image={course.image}
-                    subtitle={course.subtitle}
-                    caption={course.caption}
-                    author={course.author}
-                    logo={course.logo}
-                    avatar={course.avatar}
+                    title={podcast.title}
+                    image={podcast.image}
+                    subtitle={podcast.subtitle}
+                    caption={podcast.caption}
+                    author={podcast.author}
+                    logo={podcast.logo}
+                    avatar={podcast.avatar}
                   />
                 ))}
               </View>
@@ -193,98 +193,98 @@ const RootView = styled.View`
 
 const topics = [
   {
-    image: require("../assets/logo-framerx.png"),
+    image: require("../assets/logo-bitcoin.png"),
     text: "Crypto"
   },
   {
-    image: require("../assets/logo-figma.png"),
+    image: require("../assets/logo-nft1.png"),
     text: "NFTs"
   },
   {
-    image: require("../assets/logo-studio.png"),
+    image: require("../assets/logo-pound1.png"),
     text: "Trading"
   },
   {
-    image: require("../assets/logo-react.png"),
+    image: require("../assets/logo-rivian1.png"),
     text: "IPOs"
   },
   {
-    image: require("../assets/logo-swift.png"),
+    image: require("../assets/logo-leave1.png"),
     text: "Green Stocks"
   },
   {
-    image: require("../assets/logo-sketch.png"),
+    image: require("../assets/logo-earth1.png"),
     text: "ESG"
   },
 ];
 
-const cards = [
+const promoted = [
   {
-    title: "React Native for Designers",
+    title: "Understanding Bitcoin",
     image: require("../assets/background11.jpg"),
-    subtitle: "React Native",
+    subtitle: "Bitcoin",
     caption: "1 of 12 episodes",
-    logo: require("../assets/logo-react.png")
+    logo: require("../assets/logo-bitcoin.png")
   },
   {
-    title: "Styled Components",
+    title: "Decentralised, Unregulated",
     image: require("../assets/background12.jpg"),
-    subtitle: "React Native",
+    subtitle: "Bitcoin",
     caption: "2 of 12 episodes",
-    logo: require("../assets/logo-react.png")
+    logo: require("../assets/logo-bitcoin.png")
   },
   {
-    title: "Props and Icons",
+    title: "More Liquidity, More Problems",
     image: require("../assets/background13.jpg"),
-    subtitle: "React Native",
+    subtitle: "Bitcoin",
     caption: "3 of 12 episodes",
-    logo: require("../assets/logo-react.png")
+    logo: require("../assets/logo-bitcoin.png")
   },
   {
-    title: "Static Data and Loop",
+    title: "El Salvador adopts it.",
     image: require("../assets/background14.jpg"),
-    subtitle: "React Native",
+    subtitle: "Bitcoin",
     caption: "4 of 12 episodes",
-    logo: require("../assets/logo-react.png")
+    logo: require("../assets/logo-bitcoin.png")
   },
 ];
 
-const courses = [
+const podcasts = [
   {
-    title: "Prototype in InVision Studio",
-    subtitle: "10 episodes",
+    title: "FTX Crash: the End of Crypto?",
+    subtitle: "7 episodes",
+    image: require("../assets/background12.jpg"),
+    logo: require("../assets/logo-ftx1.png"),
+    author: "David Ohayon",
+    avatar: require("../assets/avatar2.png"),
+    caption: "Discussing the future of Crypto"
+  },
+  {
+    title: "NFTs for the Health Industry",
+    subtitle: "4 episodes",
     image: require("../assets/background13.jpg"),
-    logo: require("../assets/logo-studio.png"),
-    author: "Meng To",
-    avatar: require("../assets/avatar.jpg"),
-    caption: "Design and interactive prototype"
+    logo: require("../assets/logo-nft1.png"),
+    author: "David Ohayon",
+    avatar: require("../assets/avatar2.png"),
+    caption: "NFT devs explain how NFTs will disrupt Healthcare"
   },
   {
-    title: "React for Designers",
-    subtitle: "12 episodes",
-    image: require("../assets/background11.jpg"),
-    logo: require("../assets/logo-react.png"),
-    author: "Meng To",
-    avatar: require("../assets/avatar.jpg"),
-    caption: "Learn to design and code a React site"
-  },
-  {
-    title: "Design and Code with Framer X",
-    subtitle: "10 episodes",
+    title: "ESG Talks with Elon Musk",
+    subtitle: "6 episodes",
     image: require("../assets/background14.jpg"),
-    logo: require("../assets/logo-framerx.png"),
-    author: "Meng To",
-    avatar: require("../assets/avatar.jpg"),
-    caption: "Create powerful design and code components for your app"
+    logo: require("../assets/logo-earth1.png"),
+    author: "Elon Musk",
+    avatar: require("../assets/avatar2.png"),
+    caption: "Relevant or Bullshit? Let Elon Musk speak his mind"
   },
   {
-    title: "Design System in Figma",
+    title: "2023 Top IPOs to Watch",
     subtitle: "10 episodes",
     image: require("../assets/background6.jpg"),
-    logo: require("../assets/logo-figma.png"),
-    author: "Meng To",
-    avatar: require("../assets/avatar.jpg"),
+    logo: require("../assets/logo-rivian1.png"),
+    author: "David Ohayon",
+    avatar: require("../assets/avatar2.png"),
     caption:
-      "Complete guide to designing a site using a collaborative design tool"
+      "With a looming recession, 2023 could be a fantastic year for IPOs"
   }
 ];

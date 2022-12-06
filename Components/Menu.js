@@ -151,18 +151,18 @@ export default connect(
 const items = [
   {
     icon: "ios-settings",
-    title: "Account",
+    title: "Preferences",
     text: "settings"
   },
   {
     icon: "ios-card",
-    title: "Billing",
+    title: "Subscriptions",
     text: "payments",
   },
   {
     icon: "ios-compass",
-    title: "Learn React",
-    text: "start course",
+    title: "Zeep Unpacked",
+    text: "our homemade podcast!",
   },
   {
     icon: "ios-exit",
