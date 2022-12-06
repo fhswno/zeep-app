@@ -23,3 +23,7 @@ Wordpress or Retool backend to analyse those links in more depth. I could design
 I am building this UI on the side, so it might not be 100% stable whe you try to run it.!
 
 [Uploading Screenshot 2022-12-06 at 1.39.29 pm.png…]()
+
+## Screenshot(s)
+
+![App Screenshot](Screenshot 2022-12-06 at 1.41.18 pm.png "App Screenshot")
